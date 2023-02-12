@@ -18,8 +18,19 @@ export default {
 };
 </script>
 <style>
-* {margin: 0; padding: 0; box-sizing: border-box;}
+body {margin: 0; padding: 0; box-sizing: border-box;}
+a {
+  text-decoration: none;
+  color: #34495e;
+}
+a:hover {
+  color: #42b883;
+}
+a.router-link-exact-active {
+  text-decoration: underline;
+}
 
+/* 트랜지션 효과 */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
